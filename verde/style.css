@@ -1,0 +1,113 @@
+/*Pontos*/
+.conteinerP {
+  height: 20vh;
+}
+.conteinerP .pontuacao {
+  font-style: italic;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+.pontos, .pontosF {
+  font-size: 15vh;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/*fail*/
+.fail {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  background: #00000054;
+}
+.fail .conteinerF{
+  width: 80vw;
+  height: 30vh;
+  background: #fff5e1;
+  margin-top: 35vh;
+  margin-left: 10vw;
+  border-radius: 5vw;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteinerF .pontuacao {
+  font-style: italic;
+  text-align: center;
+  color: black;
+  position: relative;
+}
+
+/*Conteiner de Card Cor*/
+.conteiner1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  vertical-align: central;
+  margin-bottom: 20px;
+}
+.cardcor {
+  width: 30vh;
+  height: 30vh;
+  background: green;
+  border-radius: 5vh;
+}
+
+/*Conteiner de Card Nome*/
+.conteiner2 {
+  display: flex;
+}
+.card1, .card2, .card3 {
+  width: 15vh; height: 15vh;
+  background: #fff5e1;
+  display: inline-block;
+  border-radius: 2.1vh;
+  margin: 0 5px 0 5px;
+  transition: .5s;
+}
+.conteiner2 p {
+  font-size: 2.5vh;
+  margin-top: 6.25vh;
+  padding-top: 0;
+  text-align: center;
+  font-family: Sans-Serif;
+}
+
+
+/*Caracteristicas das cards*/
+.errado {
+  box-shadow:
+    inset 3vh 3vh 10vh red,
+    inset -3vh -3vh 10vh red,
+    1vh 1vh 2.5vh red,
+    -1vh -1vh 2.5vh red,
+    -1vh 1vh 2.5vh red,
+    1vh -1vh 2.5vh red;
+}
+.certo {
+  box-shadow:
+    inset 3.5vh 3.5vh 10vh gold,
+    inset -3.5vh -3.5vh 10vh gold,
+    1vh 1vh 5vh gold,
+    -1vh -1vh 5vh gold,
+    -1vh 1vh 5vh gold,
+    1vh -1vh 5vh gold;
+  z-index: 1;
+}
+
+/*sombra experimental*/
+.cardcor, .cardin, .fail .conteinerF {
+  box-shadow:
+    inset 5px 5px 10px #ffffff50,
+    inset -5px -5px 10px #00000050;
+}
+
+/*Keyframes*/
+@keyframes failin {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
