@@ -1,0 +1,16 @@
+<svg viewBox="-50 -50 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <path stroke="black" fill="black" d="M-40 -30
+    h30
+    v30
+    l-12 -12
+    a1 1, 0, 0 0, 44 24
+    A25 25, 0, 0 0, 17.5 -17.5
+    l11 -11
+    A1 1, 0, 0 1, -28.5 28.5
+    A40 40, 0, 0 1, -33 -22.5
+    z"/>
+  
+</svg>
