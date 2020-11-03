@@ -16,14 +16,7 @@
 }
 
 /*fail*/
-.fail {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  display: none;
-  background: #00000054;
-}
-.fail .conteinerF{
+.T404 .conteinerF{
   width: 80vw;
   height: 30vh;
   background: #fff5e1;
@@ -40,6 +33,7 @@
   text-align: center;
   color: black;
   position: relative;
+  display: block;
 }
 
 /*Conteiner de Card Cor*/
@@ -64,15 +58,16 @@
 .card1, .card2, .card3 {
   width: 15vh; height: 15vh;
   background: #fff5e1;
-  display: inline-block;
-  border-radius: 2.1vh;
+  display: inline-flex;
+  justify-content: space-arround;
+  border-radius: 2.5vh;
   margin: 0 5px 0 5px;
   transition: .5s;
 }
 .conteiner2 p {
   font-size: 2.5vh;
-  margin-top: 6.25vh;
-  padding-top: 0;
+  display: flex;
+  margin: auto auto;
   text-align: center;
   font-family: Sans-Serif;
 }
@@ -100,7 +95,7 @@
 }
 
 /*sombra experimental*/
-.cardcor, .cardin, .fail .conteinerF {
+.cardcor, .cardin, .conteinerF {
   box-shadow:
     inset 5px 5px 10px #ffffff50,
     inset -5px -5px 10px #00000050;
@@ -110,4 +105,14 @@
 @keyframes failin {
   0%{opacity: 0;}
   100%{opacity: 1;}
+}
+
+/*header em fail*/
+.topleft {
+  margin-top: 0;
+  margin-left: 0;
+}
+.topright {
+  margin-top: 0;
+  margin-left: 0;
 }
