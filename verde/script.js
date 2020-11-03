@@ -16,36 +16,48 @@ function loop() {
   
   //nomear card com reposta
   var num2 = Math.floor(Math.random() * cards.length)
-  cards[num2].innerHTML = `<p>${corcard}</p>`
+  cards[num2].innerHTML = `<p>${coresT[num]}</p>`
   cards[num2].id = corcard
   var cardout = cards.splice(num2, 1)[0]
   var corout = cores.splice(num, 1)[0]
+  var corTout = coresT.splice(num, 1)[0]
   
   //nomear outras cards
   var num3 = Math.floor(Math.random() * cores.length)
-  cards[0].innerHTML = `<p>${cores[num3]}</p>`
+  cards[0].innerHTML = `<p>${coresT[num3]}</p>`
   cards[0].id = cores[num3]
   var corout2 = cores.splice(num3, 1)[0]
+  var corTout2 = coresT.splice(num3, 1)[0]
   
   var num4 = Math.floor(Math.random() * cores.length)
-  cards[1].innerHTML = `<p>${cores[num4]}</p>`
+  cards[1].innerHTML = `<p>${coresT[num4]}</p>`
   cards[1].id = cores[num4]
   
   //repor cores e organizar cards
   cards.push(cardout)
   cores.push(corout)
   cores.push(corout2)
+  coresT.push(corTout)
+  coresT.push(corTout2)
   cards = [
     document.querySelector('.card1'),
     document.querySelector('.card2'),
     document.querySelector('.card3'),
     ]
+  
+  ////insetvida(vidas)
 }
 function reload() {
+  //devolver top e vidas
+  var top = [document.querySelector(".topleft"),document.querySelector(".topright")]
+  document.querySelector("header").appendChild(top[0])
+  document.querySelector("header").appendChild(top[1]); top[1].style.marginLeft = "68vw"
+  vidas = 2
+  
   //remover fail
-  var fail = document.querySelector(".fail")
-  fail.style.display = "none"
-  fail.style.animation = "failout 1s"
+  var T404 = document.querySelector(".T404")
+  T404.style.display = "none"
+
   //girar a seta
 	var img = document.querySelector("img")
 	function anm() {
@@ -69,16 +81,83 @@ function reload() {
 	anm(); loop(); pontos = "0";
 	document.querySelector(".pontos").innerText = pontos
 }
+/*function insetvida(v) {
+  var p = document.querySelector(".cardcor p")
+  if (v == 2) {
+    p.innerHTML = "&hearts; &hearts; <br> &hearts;"
+  }else if (v == 1) {
+    p.innerHTML = "&hearts; &hearts;"
+  }else if (v == 0) {
+    p.innerHTML = "&hearts;"
+  }else {
+    p.innerHTML = ""
+  }
+}*/
 
 var cores = [
-  "green",
-  "aqua",
-  "aquamarine",
-  "lime",
-  "cyan",
-  "cadetblue",
-  "chartreuse",
-  "darkcyan"]
+  "Green",
+  "Aqua",
+  "AquaMarine",
+  "Cyan",
+  "CadetBlue",
+  "Chartreuse",
+  "DarkCyan",
+  "DarkGreen",
+  "DarkKhaki",
+  "DarkOliveGreen",
+  "DarkSeaGreen",
+  "DarkSlateGray",
+  "DarkTurquoise",
+  "ForestGreen",
+  "GreenYellow",
+  "LawnGreen",
+  "lightGreen",
+  "LightSeaGreen",
+  "Lime",
+  "LimeGreen",
+  "MediumSpringGreen",
+  "MediumTurquoise",
+  "Olive",
+  "OliveDrab",
+  "PaleGreen",
+  "SeaGreen",
+  "SpringGreen",
+  "Teal",
+  "Turquoise",
+  "YellowGreen"
+  ]
+var coresT = [
+  "Green",
+  "Aqua",
+  "AquaMarine",
+  "Cyan",
+  "CadetBlue",
+  "Chartreuse",
+  "DarkCyan",
+  "DarkGreen",
+  "DarkKhaki",
+  "Dark<wbr/>OliveGreen",
+  "Dark<wbr/>SeaGreen",
+  "Dark<wbr/>SlateGray",
+  "Dark<wbr/>Turquoise",
+  "ForestGreen",
+  "GreenYellow",
+  "LawnGreen",
+  "lightGreen",
+  "Light<wbr/>SeaGreen",
+  "Lime",
+  "LimeGreen",
+  "Medium<wbr/>SpringGreen",
+  "Medium<wbr/>Turquoise",
+  "Olive",
+  "OliveDrab",
+  "PaleGreen",
+  "SeaGreen",
+  "Spring<wbr/>Green",
+  "Teal",
+  "Turquoise",
+  "Yellow<wbr/>Green"
+  ]
 var cardcor = document.querySelector(".cardcor")
 var cards = [
     document.querySelector('.card1'),
@@ -104,9 +183,11 @@ function click1() {
     audios[1].play()
     cards[0].classList.add("errado")
     if (vidas == 0) {
+      //insetvida(vidas)
       fail()
     }else {
       vidas--
+      //insetvida(vidas)
     }
   }
 }
@@ -119,9 +200,11 @@ function click2() {
     audios[1].play()
     cards[1].classList.add("errado")
     if (vidas == 0) {
+      //insetvida(vidas)
       fail()
     }else {
       vidas--
+      //insetvida(vidas)
     }
   }
 }
@@ -134,9 +217,11 @@ function click3() {
     audios[1].play()
     cards[2].classList.add("errado")
     if (vidas == 0) {
+      //insetvida(vidas)
       fail()
     }else {
       vidas--
+      //insetvida(vidas)
     }
   }
 }
@@ -158,12 +243,16 @@ function pass() {
 }
 
 function fail() {
-  var fail = document.querySelector(".fail")
-  fail.style.display = "block"
-  fail.style.animation = "failin 1s"
+  //mostrar fail
+  var T404 = document.querySelector(".T404")
+  T404.style.display = "block"
+  T404.style.animation = "failin 1s"
+  T404.style.background = "#00000070"
   document.querySelector(".pontos").innerText = "0"
-  var topleft = document.querySelector(".topleft")
-  var topright = document.querySelector(".topright")
-  fail.appendChild(topleft)
-  fail.appendChild(topright)
+  //mostrar controles
+  var contr =document.querySelector(".controles")
+  var top = [document.querySelector(".topleft"),document.querySelector(".topright")]
+  top[1].style.marginLeft = "4vw"
+  contr.appendChild(top[0])
+  contr.appendChild(top[1])
 }
