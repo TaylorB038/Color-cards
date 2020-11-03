@@ -1,0 +1,14 @@
+.play {
+  width: 30vh; height: 30vh;
+  background: #fff5e1;
+  border-radius: 5vh;
+}
+
+.triangulo {
+  width: 0; height: 0;
+  margin-top: 5vh;
+  margin-left: 8.5vh;
+  border-top: 10vh solid transparent;
+  border-bottom: 10vh solid transparent;
+  border-left: 16.5vh solid black;
+}
