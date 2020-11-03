@@ -2,6 +2,7 @@
   width: 30vh; height: 30vh;
   background: #fff5e1;
   border-radius: 5vh;
+  display: block;
 }
 
 .triangulo {
