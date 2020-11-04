@@ -1,0 +1,14 @@
+<svg viewBox="-50 -50 100 100"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <path stroke="black" d="m0 -30,
+    h-30
+    v30
+    l7.5 -7.5
+    l42.5 42.5
+    l15 -15
+    l-42.5 -42.5, z"
+    style="transform: rotate(-45deg)"/>
+    
+</svg>
