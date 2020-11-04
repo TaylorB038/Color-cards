@@ -169,7 +169,7 @@ var audios = [
   audios[0].volume = 0.7; audios[1].volume = 0.5
 var pontos = ""
 var vidas = "2"
-if (localStorage.getItem("melhor" == null) {
+if (localStorage.getItem("melhor") == null) {
   localStorage.setItem("melhor", "")
 }
 
