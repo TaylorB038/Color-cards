@@ -59,7 +59,7 @@ function reload() {
   T404.style.display = "none"
 
   //girar a seta
-	var reload = document.querySelector(".reload")
+	var reload = document.querySelector(".reload img")
 	function anm() {
 	  var i = setInterval(frame, 1)
 	  var g = 0
@@ -263,3 +263,5 @@ function fail() {
   contr.appendChild(top[0])
   contr.appendChild(top[1])
 }
+
+document.querySelector(".load.404").style.display = "none"
