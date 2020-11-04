@@ -170,7 +170,7 @@ var audios = [
 var pontos = ""
 var vidas = "2"
 if (localStorage.getItem("melhor") == null) {
-  localStorage.setItem("melhor", "")
+  localStorage.setItem("melhor", "0")
 }
 
 cards[0].addEventListener("click", click1)
