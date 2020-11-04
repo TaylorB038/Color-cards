@@ -59,7 +59,7 @@ function reload() {
   T404.style.display = "none"
 
   //girar a seta
-	var img = document.querySelector("img")
+	var reload = document.querySelector(".reload")
 	function anm() {
 	  var i = setInterval(frame, 1)
 	  var g = 0
@@ -68,7 +68,7 @@ function reload() {
 	      clearInterval(1)
 	    }else{
 	      g += 5
-	      img.style.transform = `rotate(${g}deg)`
+	      reload.style.transform = `rotate(${g}deg)`
 	    }
 	  }
 	}
