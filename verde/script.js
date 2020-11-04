@@ -264,4 +264,4 @@ function fail() {
   contr.appendChild(top[1])
 }
 
-document.querySelector(".load.404").style.display = "none"
+document.querySelector(".loadall").style.display = "none"
