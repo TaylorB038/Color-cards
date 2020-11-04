@@ -244,11 +244,10 @@ function pass() {
 
 function fail() {
   //salvar ou relacionar pontuação
-  if (sessionStorage.getItem("melhor") = full || sessionStorage.getItem("melhor") < pontos) {
+  if (sessionStorage.getItem("melhor") == null || sessionStorage.getItem("melhor") < pontos) {
     sessionStorage.setItem("melhor", pontos)
     window.alert("Melhor Pontuação!")
   }
-    
 
   //mostrar fail
   var T404 = document.querySelector(".T404")
