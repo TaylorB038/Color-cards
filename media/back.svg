@@ -1,14 +1,35 @@
 <svg viewBox="-50 -50 100 100"
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+   <!--<g class="grid">
+    <path stroke="green" d="m-40 -50 v100"/>
+    <path stroke="green" d="m-30 -50 v100"/>
+    <path stroke="green" d="m-20 -50 v100"/>
+    <path stroke="green" d="m-10 -50 v100"/>
+    <path stroke="green" d="m0 -50 v100"/>
+    <path stroke="green" d="m10 -50 v100"/>
+    <path stroke="green" d="m20 -50 v100"/>
+    <path stroke="green" d="m30 -50 v100"/>
+    <path stroke="green" d="m40 -50 v100"/>
+    
+    <path stroke="green" d="m-50 -40 h 100"/>
+    <path stroke="green" d="m-50 -30 h 100"/>
+    <path stroke="green" d="m-50 -20 h 100"/>
+    <path stroke="green" d="m-50 -10 h 100"/>
+    <path stroke="green" d="m-50 0 h 100"/>
+    <path stroke="green" d="m-50 10 h 100"/>
+    <path stroke="green" d="m-50 20 h 100"/>
+    <path stroke="green" d="m-50 30 h 100"/>
+    <path stroke="green" d="m-50 40 h 100"/>
+  </g>-->
 
-  <path stroke="black" d="m0 -30,
-    h-30
-    v30
-    l7.5 -7.5
-    l42.5 42.5
-    l15 -15
-    l-42.5 -42.5, z"
-    style="transform: rotate(-45deg)"/>
+  <path stroke="black" d="m0 -40
+    l-40 40
+    h10
+    v40
+    h60
+    v-40
+    h10 z"/>
     
 </svg>
