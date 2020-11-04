@@ -243,12 +243,20 @@ function pass() {
 }
 
 function fail() {
+  //salvar ou relacionar pontuação
+  if (sessionStorage.getItem("melhor") = full || sessionStorage.getItem("melhor") < pontos) {
+    sessionStorage.setItem("melhor", pontos)
+    window.alert("Melhor Pontuação!")
+  }
+    
+
   //mostrar fail
   var T404 = document.querySelector(".T404")
   T404.style.display = "block"
   T404.style.animation = "failin 1s"
   T404.style.background = "#00000070"
   document.querySelector(".pontos").innerText = "0"
+
   //mostrar controles
   var contr =document.querySelector(".controles")
   var top = [document.querySelector(".topleft"),document.querySelector(".topright")]
