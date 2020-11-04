@@ -257,8 +257,8 @@ function fail() {
   document.querySelector(".pontos").innerText = "0"
 
   //mostrar controles
-  var contr =document.querySelector(".controles")
-  var top = [document.querySelector(".topleft"),document.querySelector(".topright")]
+  var contr = document.querySelector(".controles")
+  var top = [document.querySelector(".mainmenu"),document.querySelector(".topright")]
   top[1].style.marginLeft = "4vw"
   contr.appendChild(top[0])
   contr.appendChild(top[1])
