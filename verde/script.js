@@ -244,8 +244,8 @@ function pass() {
 
 function fail() {
   //salvar ou relacionar pontuação
-  if (sessionStorage.getItem("melhor") == null || sessionStorage.getItem("melhor") < pontos) {
-    sessionStorage.setItem("melhor", pontos)
+  if (localStorage.getItem("melhor") == null || sessionStorage.getItem("melhor") < pontos) {
+    localStorage.setItem("melhor", pontos)
     window.alert("Melhor Pontuação!")
   }
 
