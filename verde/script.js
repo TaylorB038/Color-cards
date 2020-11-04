@@ -169,9 +169,6 @@ var audios = [
   audios[0].volume = 0.7; audios[1].volume = 0.5
 var pontos = ""
 var vidas = "2"
-if (localStorage.getItem("melhor") == null) {
-  localStorage.setItem("melhor", "0")
-}
 
 cards[0].addEventListener("click", click1)
 cards[1].addEventListener("click", click2)
@@ -247,7 +244,7 @@ function pass() {
 
 function fail() {
   //salvar ou relacionar pontuação
-  if (localStorage.getItem("melhor") < pontos) {
+  if (localStorage.getItem("melhor") < pontos || localStorage.getItem("melhor") == null) {
     localStorage.setItem("melhor", pontos)
     window.alert("Melhor Pontuação!")
   }
