@@ -175,6 +175,8 @@ cards[1].addEventListener("click", click2)
 cards[2].addEventListener("click", click3)
 
 function click1() {
+  audios[0].stop
+  audios[1].stop
   if (corcard == cards[0].id) {
     audios[0].play()
     cards[0].classList.add("certo")
