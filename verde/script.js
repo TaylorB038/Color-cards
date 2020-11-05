@@ -175,8 +175,8 @@ cards[1].addEventListener("click", click2)
 cards[2].addEventListener("click", click3)
 
 function click1() {
-  audios[0].stop
-  audios[1].stop
+  audios[0].stop()
+  audios[1].stop()
   if (corcard == cards[0].id) {
     audios[0].play()
     cards[0].classList.add("certo")
@@ -194,6 +194,8 @@ function click1() {
   }
 }
 function click2() {
+  audios[0].stop()
+  audios[1].stop()
   if (corcard == cards[1].id) {
     audios[0].play()
     cards[1].classList.add("certo");
@@ -211,6 +213,8 @@ function click2() {
   }
 }
 function click3() {
+  audios[0].stop()
+  audios[1].stop()
   if (corcard == cards[2].id) {
     audios[0].play()
     cards[2].classList.add("certo")
