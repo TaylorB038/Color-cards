@@ -195,7 +195,7 @@ function click1() {
 }
 function click2() {
   if (corcard == cards[1].id) {
-    audios[0]currentTime = 0
+    audios[0].currentTime = 0
     audios[0].play()
     cards[1].classList.add("certo");
     pass()
