@@ -176,7 +176,7 @@ cards[2].addEventListener("click", click3)
 
 function click1() {
   if (corcard == cards[0].id) {
-    audios[0].current time = 0
+    audios[0].currentTime = 0
     audios[0].play()
     cards[0].classList.add("certo")
     pass()
@@ -195,7 +195,7 @@ function click1() {
 }
 function click2() {
   if (corcard == cards[1].id) {
-    audios[0]current time = 0
+    audios[0]currentTime = 0
     audios[0].play()
     cards[1].classList.add("certo");
     pass()
@@ -214,7 +214,7 @@ function click2() {
 }
 function click3() {
   if (corcard == cards[2].id) {
-    audios[0].current time = 0
+    audios[0].currentTime = 0
     audios[0].play()
     cards[2].classList.add("certo")
     pass()
