@@ -269,3 +269,5 @@ function fail() {
   contr.appendChild(top[0])
   contr.appendChild(top[1])
 }
+
+cardcor.innerHTML = localStorage.getItem("melhor")
