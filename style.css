@@ -15,6 +15,7 @@
 }
 
 #conteinerC {
+  width: 80vw; height: 20vh;
   border: 1px solid white;
   position: absolute;
   display: flex;
