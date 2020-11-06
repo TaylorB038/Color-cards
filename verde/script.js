@@ -49,7 +49,7 @@ function loop() {
 }
 function reload() {
   //devolver top e vidas
-  var top = [document.querySelector(".topleft"),document.querySelector(".topright")]
+  var top = [document.querySelector(".mainmenu"),document.querySelector(".topright")]
   document.querySelector("header").appendChild(top[0])
   document.querySelector("header").appendChild(top[1]); top[1].style.marginLeft = "68vw"
   vidas = 2
