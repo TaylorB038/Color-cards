@@ -254,6 +254,7 @@ function fail() {
     localStorage.setItem("melhor", pontos)
     window.alert("Melhor Pontuação!")
   }
+  cardcor.innerHTML = localStorage.getItem("melhor")
 
   //mostrar fail
   var T404 = document.querySelector(".T404")
@@ -269,5 +270,3 @@ function fail() {
   contr.appendChild(top[0])
   contr.appendChild(top[1])
 }
-
-cardcor.innerHTML = localStorage.getItem("melhor")
