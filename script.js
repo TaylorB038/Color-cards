@@ -1,8 +1,8 @@
 var config = document.querySelector(".config")
 
-config.addEventListener("click", configuracoes)
+config.addEventListener("click", abrir)
 
-function configuracoes() {
+function abrir() {
   document.querySelector(".configuracoes").style.display = "block"
   document.querySelector("button").addEventListener("click", zerar)
   function zerar() {
