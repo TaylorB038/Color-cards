@@ -20,4 +20,5 @@
   position: absolute;
   display: flex;
   z-index: 3;
+  border-radius: 5vh
 }
