@@ -17,6 +17,6 @@
 #conteinerC {
   border: 1px solid white;
   position: absolute;
-  display: none;
+  display: flex;
   z-index: 3;
 }
