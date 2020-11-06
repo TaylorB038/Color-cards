@@ -13,3 +13,7 @@
   border-bottom: 10vh solid transparent;
   border-left: 16.5vh solid black;
 }
+
+.configuracoes {
+  display: none;
+}
