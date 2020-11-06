@@ -3,5 +3,5 @@ function abrir() {
 }
 document.querySelector("botaozerar").addEventListener("click", zerar)
 function zerar() {
-  localStorage.remove("melhor")
+  localStorage.removeItem("melhor")
 }
