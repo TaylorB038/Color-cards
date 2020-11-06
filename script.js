@@ -1,5 +1,5 @@
 function abrir() {
-  document.querySelector(".configuracoes").style.display = "block"
+  document.querySelector(".conteinerC").style.display = "block"
 }
 document.querySelector(".botaozerar").addEventListener("click", zerar)
 function zerar() {
