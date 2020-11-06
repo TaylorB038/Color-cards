@@ -26,10 +26,10 @@
 
   <path stroke="black" d="m0 -40
     l-40 40
-    h10
-    v40
-    h60
-    v-40
-    h10 z"/>
+    h15
+    v35
+    h5p
+    v-35
+    h15 z"/>
     
 </svg>
