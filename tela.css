@@ -23,6 +23,7 @@ body {
   position: absolute;
   display: none;
   background: #000000;
+  z-index: 3;
 }
 
 /*header e footer*/
@@ -31,7 +32,7 @@ header {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 3;
+  z-index: 2;
 }
 footer {
   position: absolute;
