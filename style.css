@@ -17,8 +17,15 @@
 #conteinerC {
   width: 80vw; height: 20vh;
   border: 1px solid white;
+  background: #fff5e1;
   position: absolute;
   display: flex;
   z-index: 3;
-  border-radius: 5vh
+  border-radius: 5vh;
+  justify-content: center;
+  aling-items: center;
+}
+.botaozerar {
+  width: 30vw: height: 20pt;
+  background: black;
 }
