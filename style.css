@@ -29,4 +29,5 @@
   width: 30vw: height: 2vh;
   background: black;
   color: white;
+  text-transform: uppercase;
 }
