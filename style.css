@@ -26,6 +26,7 @@
   aling-items: center;
 }
 .botaozerar {
-  width: 30vw: height: 20pt;
+  width: 30vw: height: 2vh;
   background: black;
+  color: white;
 }
