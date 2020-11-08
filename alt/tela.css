@@ -1,0 +1,78 @@
+/*tela*/
+body {
+  width: 100vw; height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #3d3d3d;
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+  vertical-align: central;
+}
+.tela {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: central;
+  /*border: 3px solid purple;*/
+}
+.T404 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  background: #000000;
+  z-index: 3;
+}
+
+/*header e footer*/
+header {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+footer {
+  position: absolute;
+  left: 0;
+  top: 90vh;
+  width: 100vw;
+  height: 10vh;
+  text-align: center;
+  color: grey;
+}
+
+.topleft {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 1vh;
+  background: #fff5e1;
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: 4vw;
+  display: inline-block;
+  box-shadow:
+    inset 5px 5px 10px #ffffff50,
+    inset -5px -5px 10px #00000050;
+}
+
+.topright {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 1vh;
+  background: #fff5e1;
+  display: inline-block;
+  margin-left: 68vw;
+  margin-top: 4vw;
+  box-shadow:
+    inset 5px 5px 10px #ffffff50,
+    inset -5px -5px 10px #00000050;
+}
+.reload img {
+	width: 10vw;
+	height: 10vw;
+	transform: rotate(-45deg);
+}
