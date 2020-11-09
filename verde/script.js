@@ -252,7 +252,7 @@ function fail() {
   //salvar ou relacionar pontuação
   if (localStorage.getItem("melhor") < pontos || localStorage.getItem("melhor") == null) {
     localStorage.setItem("melhor", pontos)
-    window.alert("Melhor Pontuação!")
+    document.querySelector(".conteinerF")innerHTML = `<p class="best"><b>Melhor Pontuação</b></p>`
   }
   cardcor.innerHTML = localStorage.getItem("melhor")
 
