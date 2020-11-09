@@ -24,7 +24,6 @@
   margin-left: 10vw;
   border-radius: 5vw;
   color: black;
-  border: 1px solid purple;
 }
 .conteinerF .pontuacao {
   width: 80vw;
@@ -33,7 +32,6 @@
   color: black;
   position: relative;
   display: block;
-  border: 1px solid red;
 }
 
 .concontroles {
