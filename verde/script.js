@@ -81,18 +81,6 @@ function reload() {
 	anm(); loop(); pontos = "0";
 	document.querySelector(".pontos").innerText = pontos
 }
-/*function insetvida(v) {
-  var p = document.querySelector(".cardcor p")
-  if (v == 2) {
-    p.innerHTML = "&hearts; &hearts; <br> &hearts;"
-  }else if (v == 1) {
-    p.innerHTML = "&hearts; &hearts;"
-  }else if (v == 0) {
-    p.innerHTML = "&hearts;"
-  }else {
-    p.innerHTML = ""
-  }
-}*/
 
 var cores = [
   "Green",
@@ -252,9 +240,10 @@ function fail() {
   //salvar ou relacionar pontuação
   if (localStorage.getItem("melhor") < pontos || localStorage.getItem("melhor") == null) {
     localStorage.setItem("melhor", pontos)
-    document.querySelector(".conteinerF")innerHTML = `<p class="best"><b>Melhor Pontuação</b></p>`
+    document.querySelector(".conteinerF")innerHTML += `<p class="best"><b>Melhor Pontuação!</b></p>`
+  }else{
+    document.querySelector(".best").style.display = null
   }
-  cardcor.innerHTML = localStorage.getItem("melhor")
 
   //mostrar fail
   var T404 = document.querySelector(".T404")
