@@ -44,8 +44,6 @@ function loop() {
     document.querySelector('.card2'),
     document.querySelector('.card3'),
     ]
-  
-  ////insetvida(vidas)
 }
 function reload() {
   //devolver top e vidas
@@ -173,11 +171,9 @@ function click1() {
     audios[1].play()
     cards[0].classList.add("errado")
     if (vidas == 0) {
-      //insetvida(vidas)
       fail()
     }else {
       vidas--
-      //insetvida(vidas)
     }
   }
 }
@@ -192,11 +188,9 @@ function click2() {
     audios[1].play()
     cards[1].classList.add("errado")
     if (vidas == 0) {
-      //insetvida(vidas)
       fail()
     }else {
       vidas--
-      //insetvida(vidas)
     }
   }
 }
@@ -211,11 +205,9 @@ function click3() {
     audios[1].play()
     cards[2].classList.add("errado")
     if (vidas == 0) {
-      //insetvida(vidas)
       fail()
     }else {
       vidas--
-      //insetvida(vidas)
     }
   }
 }
@@ -242,7 +234,7 @@ function fail() {
     localStorage.setItem("melhor", pontos)
     document.querySelector(".conteinerF")innerHTML += `<p class="best"><b>Melhor Pontuação!</b></p>`
   }else{
-    document.querySelector(".best").style.display = null
+    document.querySelector(".best").style.display = "none"
   }
 
   //mostrar fail
