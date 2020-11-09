@@ -38,11 +38,16 @@
 }
 .controles {
   width: 80vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
-
+.controles .topright {
+  position: absolute;
+  right: 4vw;
+}
+.controles .topleft {
+  position: absolute;
+  left: 4vw;
+}
 /*Conteiner de Card Cor*/
 .conteiner1 {
   justify-content: center;
