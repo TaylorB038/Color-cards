@@ -43,6 +43,12 @@
 .controles {
   display: flex;
 }
+
+.best {
+  color: red;
+  position: absolute;
+  top: 2vh; left 2vh;
+}
 /*Conteiner de Card Cor*/
 .conteiner1 {
   justify-content: center;
