@@ -37,6 +37,8 @@
 }
 .controles {
   display: flex;
+  position: absolute;
+  bottom: 5px;
 }
 
 /*Conteiner de Card Cor*/
