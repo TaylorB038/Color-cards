@@ -36,17 +36,14 @@
   position: relative;
   display: block;
 }
+
+.concontroles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .controles {
-  width: 80vw;
-  position: relative;
-}
-.controles .topright {
-  position: absolute;
-  right: 4vw;
-}
-.controles .topleft {
-  position: absolute;
-  left: 4vw;
+  display: flex;
 }
 /*Conteiner de Card Cor*/
 .conteiner1 {
