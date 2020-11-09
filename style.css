@@ -4,7 +4,6 @@
   border-radius: 5vh;
   display: block;
 }
-
 .triangulo {
   width: 0; height: 0;
   margin-top: 5vh;
@@ -15,19 +14,52 @@
 }
 
 #conteinerC {
-  width: 80vw; height: 20vh;
-  border: 1px solid white;
+  width: 80vw; height: 30vh;
+  left: 10vw; top: 40vh;
   background: #fff5e1;
   position: absolute;
   display: flex;
   z-index: 3;
   border-radius: 5vh;
   justify-content: center;
-  aling-items: center;
+  align-items: center;
+}
+
+.conteudo {
+  width: 80vw; height: 30vh;
+  position: relative;
+}
+.conteudo p{
+  width: 80vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Arial Sans-Serif;
+}
+.fechar {
+  width: 10vw; height: 10vw;
+  position: absolute;
+  left: 4vw; top: 4vw;
+  display: inline-block;
+  background: #fff5e1;
+  border-radius: 1vh;
 }
 #botaozerar {
-  width: 30vw; height: 20px;
+  width: 50vw; height: 20px;
+  position: absolute;
+  left: 15vw; bottom: 2vh;
   background: black;
   color: white;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.chaves {
+  position: absolute;
+  margin-top: 18vw;
+}
+.mute {
+  width: 10vw; height: 10vw;
 }
