@@ -24,11 +24,12 @@
   margin-left: 10vw;
   border-radius: 5vw;
   color: black;
-  display: flex;
+  /*display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;*/
 }
 .conteinerF .pontuacao {
+  width: 80vw;
   font-style: italic;
   text-align: center;
   color: black;
@@ -36,9 +37,7 @@
   display: block;
 }
 .controles {
-  display: flex;
-  position: absolute;
-  bottom: 5px;
+  width: 80vw;
 }
 
 /*Conteiner de Card Cor*/
