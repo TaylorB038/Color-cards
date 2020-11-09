@@ -18,7 +18,7 @@
 /*fail*/
 .T404 .conteinerF{
   width: 80vw;
-  height: 30vh;
+  height: 35vh;
   background: #fff5e1;
   margin-top: 35vh;
   margin-left: 10vw;
@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2vh;
 }
 .controles {
   display: flex;
