@@ -38,7 +38,7 @@
 }
 .controles {
   width: 80vw;
-  display: flex-box;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
