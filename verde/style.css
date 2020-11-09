@@ -38,6 +38,9 @@
 }
 .controles {
   width: 80vw;
+  display: flex-box;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Conteiner de Card Cor*/
