@@ -1,0 +1,32 @@
+<svg viewBox="-55 -55 110 110"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <g id="eng1">
+  <path stroke="black" stroke-width="1"
+    d="M-38.5 -10
+    h-10
+    v20
+    h10
+    a40 40, 0, 0 0, 28 28
+    v10
+    h20
+    v-10
+    a40 40, 0, 0 0, 29 -28
+    h10
+    v-20
+    h-10
+    a40 40, 0, 0 0, -29 -28
+    v-10
+    h-20
+    v10
+    a40 40, 0, 0 0, -28 28
+    h21
+    a20 20, 0, 0 1, 37 10
+    a20 20, 0, 0 1, -20 20
+    a20 20, 0, 0 1, -19 -20
+    a20 20, 0, 0 1, 2 -10 z" />
+  </g>
+  
+  <use xlink:href="#eng1" transform="rotate(45)" />
+</svg>
