@@ -63,3 +63,17 @@
 .mute {
   width: 10vw; height: 10vw;
 }
+
+
+
+.cores {
+  position: absolute;
+  z-index: 3;
+  background: gray;
+}
+
+.verde {
+  background: green;
+  width: 45vw; height: 45vw;
+  border-radius: 10vh;
+}
