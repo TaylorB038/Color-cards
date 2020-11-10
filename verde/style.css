@@ -24,6 +24,7 @@
   margin-left: 10vw;
   border-radius: 5vw;
   color: black;
+  position: relative;
 }
 .conteinerF .pontuacao {
   width: 80vw;
