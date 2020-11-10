@@ -232,7 +232,7 @@ function fail() {
   //salvar ou relacionar pontuação
   if (localStorage.getItem("melhor") < pontos || localStorage.getItem("melhor") == null) {
     localStorage.setItem("melhor", pontos)
-    document.querySelector(".conteinerF").innerHTML += `<p>Melhor Pontuação!</p>`
+    document.querySelector(".conteinerF").innerHTML += `<p class="best"><b>Melhor Pontuação!</b></p>`
   }else{
     document.querySelector(".best").style.display = "none"
   }
