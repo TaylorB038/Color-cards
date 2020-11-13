@@ -18,6 +18,12 @@ function abrir() {
 }
 
 function play() {
-  document.querySelector(".tela").style.display = "none"
-  document.querySelector(".cores").style.display = "flex"
+  var tela = document.querySelector(".tela")
+  var cores = document.querySelector(".cores")
+  tela.style.display = "none"
+  cores.style.display = "flex"
+  document.querySelector(".topleft").addEventListener("click", function() {
+    cores.style.display = "none"
+    tela.style.display = "flex"
+  })
 }
