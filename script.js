@@ -18,5 +18,6 @@ function abrir() {
 }
 
 function play() {
+  document.querySelector(".tela").style.display = "none"
   document.querySelector(".cores").style.display = "flex"
 }
