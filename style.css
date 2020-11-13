@@ -74,7 +74,8 @@
   display: none;
 }
 .cor {
-  
+  width: 30vh; height: 30vh;
+  border-radius: 5vh;
 }
 
 .verde {
