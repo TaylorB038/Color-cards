@@ -22,7 +22,10 @@ function play() {
   var cores = document.querySelector(".cores")
   tela.style.display = "none"
   cores.style.display = "flex"
-  document.querySelector(".topleft").addEventListener("click", function() {
+  
+  var topleft = document.querySelector(".topleft")
+  topleft.style.zIndex = 4
+  topleft.addEventListener("click", function() {
     cores.style.display = "none"
     tela.style.display = "flex"
   })
