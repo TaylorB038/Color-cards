@@ -13,6 +13,7 @@
   border-left: 16.5vh solid black;
 }
 
+/*Configurações*/
 #conteinerC {
   width: 80vw; height: 30vh;
   left: 10vw; top: 40vh;
@@ -24,7 +25,6 @@
   justify-content: center;
   align-items: center;
 }
-
 .conteudo {
   width: 80vw; height: 30vh;
   position: relative;
@@ -65,11 +65,13 @@
 }
 
 
-
+/*Depois do play*/
 .cores {
   position: absolute;
   z-index: 3;
   background: gray;
+  opacity: 0.5;
+  display: none;
 }
 
 .verde {
