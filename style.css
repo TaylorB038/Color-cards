@@ -68,10 +68,13 @@
 /*Depois do play*/
 .cores {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   background: gray;
   opacity: 0.5;
   display: none;
+}
+.cor {
+  
 }
 
 .verde {
