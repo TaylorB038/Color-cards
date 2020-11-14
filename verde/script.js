@@ -1,5 +1,10 @@
 //inicio do jogo
+function aleatorio(max) {
+  return Math.floor(Math.random() * max)
+}
 var corcard = ""
+
+
 function loop() {
   //limpar certo e errado
   for (var i = 0; i < 3; i++) {
@@ -9,13 +14,13 @@ function loop() {
   //colorir o cardcor
   var num = ""
   do {
-    num = [Math.floor(Math.random() * cores.length)]
+    num = [aleatorio(cores.length)]
   } while (corcard == cores[num])
   corcard = cores[num]
   cardcor.style.backgroundColor = corcard
   
   //nomear card com reposta
-  var num2 = Math.floor(Math.random() * cards.length)
+  var num2 = aleatorio(cards.length)
   cards[num2].innerHTML = `<p>${coresT[num]}</p>`
   cards[num2].id = corcard
   var cardout = cards.splice(num2, 1)[0]
@@ -23,13 +28,13 @@ function loop() {
   var corTout = coresT.splice(num, 1)[0]
   
   //nomear outras cards
-  var num3 = Math.floor(Math.random() * cores.length)
+  var num3 = aleatorio(cores.length)
   cards[0].innerHTML = `<p>${coresT[num3]}</p>`
   cards[0].id = cores[num3]
   var corout2 = cores.splice(num3, 1)[0]
   var corTout2 = coresT.splice(num3, 1)[0]
   
-  var num4 = Math.floor(Math.random() * cores.length)
+  var num4 = aleatorio(cores.length)
   cards[1].innerHTML = `<p>${coresT[num4]}</p>`
   cards[1].id = cores[num4]
   
