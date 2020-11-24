@@ -18,9 +18,7 @@ function abrir() {
 }
 
 function play() {
-  var tela = document.querySelector(".tela")
-  var cores = document.querySelector(".cores")
-  tela.style.display = "none"
+  var cores = document.querySelector(".telacores")
   cores.style.display = "flex"
   
   var topleft = document.querySelector(".topleft")
