@@ -3,6 +3,7 @@
   background: #fff5e1;
   border-radius: 5vh;
   display: block;
+  margin: auto;
 }
 .triangulo {
   width: 0; height: 0;
@@ -14,17 +15,16 @@
 }
 
 /*Configurações*/
-#conteinerC {
-  width: 80vw; height: 30vh;
-  left: 10vw; top: 40vh;
-  background: #fff5e1;
-  position: absolute;
-  display: flex;
-  z-index: 3;
-  border-radius: 5vh;
-  justify-content: center;
-  align-items: center;
-}
+  .conteinerConfig {
+    width: 80vw; height: 30vh;
+    left: 10vw; top: 40vh;
+    background: #fff5e1;
+    position: absolute;
+    display: none;
+    border-radius: 5vh;
+    justify-content: center;
+    align-items: center;
+  }
 .conteudo {
   width: 80vw; height: 30vh;
   position: relative;
@@ -45,53 +45,75 @@
   background: #fff5e1;
   border-radius: 1vh;
 }
-#botaozerar {
-  width: 50vw; height: 20px;
-  position: absolute;
-  left: 15vw; bottom: 2vh;
-  background: black;
-  color: white;
-  text-transform: uppercase;
-  display: flex;
-  justify-content: center;
-}
 
 .chaves {
   position: absolute;
   margin-top: 18vw;
 }
-.mute {
+.mute, .limpardados, .melhor {
   width: 10vw; height: 10vw;
+  display: inline-block;
+  border-radius: 1vh;
+  margin-right: 4vw;
 }
-
+.melhor {
+  width: 20vw;
+}
 
 /*Depois do play*/
-.cores {
+.selectcor {
   position: absolute;
-  z-index: 3;
-  background: gray;
+  background: #3d3d3d;
   opacity: 0.5;
   display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; height: 100vh;
 }
-.box {
-	width: 80vw; height: 80vh;
+.cores {
+	width: 30vh; max-height: 60vh;
 	position: absolute;
-	top: 10vh; left: 10vw;
+	top: 20vh; left: 26.5vw;
 	overflow: scroll;
-	border: 1px solid black;
 }
-/* {
-	width: 30vh;
-	margin-left: 25vw;
-}*/
 
 .cor {
-  width: 30vh; height: 30vh;
+  width: 47vw; height: 47vw;
   border-radius: 5vh;
+  display: inline-block;
 }
 
 .verde {
   background: green;
-  width: 45vw; height: 45vw;
-  border-radius: 10vh;
+  animation: verde 10s infinite;
 }
+.vermelho{
+  background: red;
+}
+
+@keyframes verde {
+  0%{
+    background: green;
+  }
+  25%{
+    background: olive;
+  }
+  50%{
+    background: limegreen;
+  }
+  75%{
+    background: seagreen;
+  }
+  100%{
+    background: green;
+  }
+}
+
+
+/*zindex*/
+  .selectcor {
+    z-index: 3;
+  }
+  .conteinerConfig {
+    z-index: 3;
+  }
