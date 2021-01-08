@@ -10,43 +10,54 @@
   <body>
     <header>
       <div class="topleft smb" onclick="abrir()">
-        <img class="svgconfig" src="media/config.svg" alt="configurações" />  
+        <img src="media/config.svg" />  
       </div>
+      <div class="topright smb" ></div>
     </header>
     <div class="tela">
       <div class="play smb" onclick="play()">
         <div class="triangulo"></div>
       </div>
     </div>
-
-    <div class="T404">
-      <div id="conteinerC">
-        <div class="conteudo">
-          <div class="fechar smb">
-            <!--<img src="media/fechar.svg" />-->
+    
+    <!--tela de configurações-->
+    <div class="conteinerConfig">
+      <div class="conteudo">
+        <div class="fechar smb" >
+          <img src="media/close.svg" onclick="fechar()"/>
+        </div>
+        <p>configurações</p>
+        
+        <div class="chaves">
+          <div class="mute smb" onclick="mudo()">
+            <img src="media/mute.svg" />
           </div>
-          <p>configurações</p>
-          <button id="botaozerar">Limpar Dados</button>
-          <div class="chaves">
-            <div class="mute smb"></div>
+          
+          <div class="limpardados smb">
+            <img src="media/trash.svg" />
+          </div>
+          
+          <div class="melhor smb">
+            <!--<img src="media/person.svg" />-->
           </div>
         </div>
       </div>
     </div>
     
-    <div class="tela cores">
-      <div class="box">
-      	<div>
-        	<a href="verde/verde.html"><div class="cor verde"></div></a>
-        </div>
+    <!--tela de seleçao de cores-->
+    <div class="selectcor">
+      <div class="cores">
+        <div class="cor verde smb"></div>
+        <div class="cor vermelho smb"></div>
+        
       </div>
     </div>
     
+    
+    <div class="T404"></div>
     <footer>
       <p>&copy;TaylorB038</p>
     </footer>
-  
-    
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
