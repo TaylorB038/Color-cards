@@ -157,7 +157,11 @@ var cards = [
 var audios = [
   document.querySelector(".talitha"),
   document.querySelector(".spica")]
-  audios[0].volume = 0.7; audios[1].volume = 0.5
+  if(localStorage.getItem("som") == "desl") {
+    audios[0].volume = 0; audios[1].volume = 0
+  }else{
+    audios[0].volume = 0.7; audios[1].volume = 0.5
+  }
 var pontos = ""
 var vidas = "2"
 
