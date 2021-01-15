@@ -29,7 +29,7 @@
   width: 80vw; height: 30vh;
   position: relative;
 }
-.conteudo p{
+#tt{
   width: 80vw;
   position: absolute;
   display: flex;
@@ -50,16 +50,27 @@
   position: absolute;
   margin-top: 18vw;
 }
-.mute, .limpardados, .melhor {
+.mute, .limpardados {
   width: 10vw; height: 10vw;
   display: inline-block;
   border-radius: 1vh;
   margin-right: 4vw;
 }
 .melhor {
-  width: 20vw;
+  width: 20vw; height: 10vw;
+  display: inline-flex;
+  border-radius: 1vh;
 }
 
+#pontos {
+  font-size: 8vw;
+  text-align: center;
+}
+#pontos, .melhor img {
+  display: inline-block;
+  width: 10vw; height: 10vw;
+  margin: 0;
+}
 /*Depois do play*/
 .selectcor {
   position: absolute;
@@ -83,12 +94,21 @@
   display: inline-block;
 }
 
+.preto {
+  background: black;
+}
+.azul {
+  background: blue;
+}
 .verde {
   background: green;
   animation: verde 10s infinite;
 }
 .vermelho{
   background: red;
+}
+.amarelo {
+  background: yellow;
 }
 
 @keyframes verde {

@@ -9,17 +9,18 @@ function abrir() {
   
   //funçao do botão de limpar dados
   document.querySelector(".limpardados").addEventListener("click", zerar)
-  function zerar() {
-    localStorage.removeItem("melhor")
-  }
-  fechar.addEventListener("click", close)
   
+  fechar.addEventListener("click", close)
   //função de fechar
   function close() {
     T404.style.display = "none"
     cont.style.display = "none"
   }
 }
+function zerar() {
+    localStorage.removeItem("melhor")
+    document.querySelector("#pontos").innerHTML = "0"
+  }
 
 function play() {
   var tela = document.querySelector(".tela")
@@ -35,11 +36,25 @@ function play() {
     cores.style.display = "none"
     tela.style.display = "flex"
   })
+  document.querySelector(".verde").addEventListener("click", irverde)
 }
 
 function mudo() {
-  sessionStorage(som, "desl")
+  if(sessionStorage.getItem("som") == "desl") {
+    sessionStorage.setItem("som", "lig")
+    document.querySelector(".mute img").removeAttribute("src")
+    document.querySelector(".mute img").setAttribute("src", "media/sound_on.svg")
+  }else{
+    sessionStorage.setItem("som", "desl")
+    document.querySelector(".mute img").removeAttribute("src")
+    document.querySelector(".mute img").setAttribute("src", "media/sound_off.svg")
+  }
+  
 }
 
 var pontos = localStorage.getItem("melhor")
-//document.querySelector(".melhor").innerHTML += `<p>${pontos}</p>`;
+document.querySelector("#pontos").innerHTML = pontos
+
+function irverde() {
+  window.location.assign("verde/verde.html")
+}

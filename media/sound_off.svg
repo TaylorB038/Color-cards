@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+	<path stroke="black" stroke-width="1" 
+	  d="m25 -40
+	  l-40 20
+	  h-20
+	  v40
+	  h20
+	  l40 20" />
+	<rect x="-10" y="-45" width="20" height="90" style="transform: rotate(45deg);" fill="red" />
+	
+	
+</svg>

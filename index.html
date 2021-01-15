@@ -12,7 +12,6 @@
       <div class="topleft smb" onclick="abrir()">
         <img src="media/config.svg" />  
       </div>
-      <div class="topright smb" ></div>
     </header>
     <div class="tela">
       <div class="play smb" onclick="play()">
@@ -26,11 +25,11 @@
         <div class="fechar smb" >
           <img src="media/close.svg" onclick="fechar()"/>
         </div>
-        <p>configurações</p>
+        <p id="tt">configurações</p>
         
         <div class="chaves">
           <div class="mute smb" onclick="mudo()">
-            <img src="media/mute.svg" />
+            <img src="media/sound_on.svg" />
           </div>
           
           <div class="limpardados smb">
@@ -38,7 +37,8 @@
           </div>
           
           <div class="melhor smb">
-            <!--<img src="media/person.svg" />-->
+            <img src="media/person.svg" />
+            <p id="pontos">0</p>
           </div>
         </div>
       </div>
@@ -47,8 +47,11 @@
     <!--tela de seleçao de cores-->
     <div class="selectcor">
       <div class="cores">
+        <div class="cor preto smb"></div>
+        <div class="cor azul smb"></div>
         <div class="cor verde smb"></div>
         <div class="cor vermelho smb"></div>
+        <div class="cor amarelo smb"></div>
         
       </div>
     </div>
