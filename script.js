@@ -56,5 +56,5 @@ var pontos = localStorage.getItem("melhor")
 document.querySelector("#pontos").innerHTML = pontos
 
 function irverde() {
-  window.location.assign("https://htmlpreview.github.io/?https://github.io/TaylorB038/Color-cards/blob/main/verde/verde.html")
+  window.location.assign("https://htmlpreview.github.io/?https://github.com/TaylorB038/Color-cards/blob/main/verde/verde.html")
 }
